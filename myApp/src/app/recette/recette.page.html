@@ -1,33 +1,65 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Nos recettes</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div style="text-align: center;">
+    <h1>Nos recettes</h1>
+    <p>Toutes les recettes du bateau de Thibault.</p>
+    <p>06.63.99.99.78</p>
+    <p>lebateaudethibault@gmail.com</p>
+    <p>www.facebook.com/lebateaudethibault</p>
+  </div>
 
-<ion-content>
+
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button routerLink="/homard">Homard</ion-button>
+        <ion-button routerLink="/homard">
+          <img src="../../assets/logo/homardRecette_icon.png" height="75%">
+          <div id="text">
+            Homard
+          </div></ion-button>
       </ion-col>
       <ion-col>
-        <ion-button routerLink="/st-jacques">St-Jacques</ion-button>
+        <ion-button routerLink="/st-jacques">
+          <img  src="../../assets/logo/saintJacques_icon.png" height="75%">
+          <div id="text">
+            St-Jacques
+          </div>
+        </ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button routerLink="/bar">Bar</ion-button>
+        <ion-button routerLink="/bar">
+          <img  src="../../assets/logo/barRecette_icon.png" height="75%">
+          <div id="text">
+            Bar
+          </div>
+        </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button routerLink="/tourteau">Tourteau</ion-button>
+        <ion-button routerLink="/tourteau">
+          <img  src="../../assets/logo/poulpe.png" height="75%">
+          <div id="text">
+            Tourteau
+          </div>
+        </ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button>Recette</ion-button>
+        <ion-button>
+          <img  src="../../assets/logo/poulpe.png" height="75%">
+          <div id="text">
+            Recette
+          </div>
+        </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button>Recette</ion-button>
+        <ion-button>
+          <img  src="../../assets/logo/poulpe.png" height="75%">
+          <div id="text">
+            Recette
+          </div>
+        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

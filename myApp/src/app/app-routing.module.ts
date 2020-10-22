@@ -87,6 +87,10 @@ const routes: Routes = [
     path: 'bisrtot-du-sommelier',
     loadChildren: () => import('./Page/Page_Restaurants/bisrtot-du-sommelier/bisrtot-du-sommelier.module').then( m => m.BisrtotDuSommelierPageModule)
   },
+  {
+    path: 'villa9-trois',
+    loadChildren: () => import('./Page/Page_Restaurants/villa9-trois/villa9-trois.module').then( m => m.Villa9TroisPageModule)
+  },
 ];
 
 @NgModule({

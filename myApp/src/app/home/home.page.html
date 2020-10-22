@@ -1,43 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <div id="container">
-    <h1>Le bateau de Thibault</h1>
-    <h3>Vente en direct de notre bateau</h3>
-    <h3>Produit selon la saison, Livraison sur Paris</h3>
-    <p>06.63.99.99.78</p>
-    <p>lebateaudethibault@gmail.com</p>
-    <p>www.facebook.com/lebateaudethibault</p>
-    <ion-button routerLink="/produit">Produit et promotion</ion-button>
+  <div id="conteneur">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Home</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <div id="container">
+      <h1>Le bateau de Thibault</h1>
+      <h3>Vente en direct de notre bateau</h3>
+      <h3>Produit selon la saison, Livraison sur Paris</h3>
+      <p>06.63.99.99.78</p>
+      <p>lebateaudethibault@gmail.com</p>
+      <p>www.facebook.com/lebateaudethibault</p>
+      
+    </div>
   </div>
+  <ion-button id="produit" routerLink="/produit">
+    <img  src="../../assets/logo/poisson.png" height="75%">
+    <div id="text">
+      Produit et promotion
+    </div>
+  </ion-button>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button [routerLink]="['/bateau']">Bateaux</ion-button>
+        <ion-button [routerLink]="['/bateau']">
+          <img  src="../../assets/logo/ancre.png" height="75%">
+          <div id="text">
+            Bateaux
+          </div>
+        </ion-button>
         
       </ion-col>
       <ion-col>
-        <ion-button [routerLink]="['/restaurant']">Restaurants</ion-button>
+        <ion-button [routerLink]="['/restaurant']">
+          <img  src="../../assets/logo/restaurant.png" height="75%">
+          <div id="text">
+            Restaurants
+          </div>
+          </ion-button>
       </ion-col>
     </ion-row>
+
     <ion-row>
       <ion-col>
-        <ion-button [routerLink]="['/recette']">Recettes</ion-button>
+        <ion-button [routerLink]="['/recette']">
+          <img  src="../../assets/logo/recette.png" height="75%">
+            <div id="text">
+              Recette
+            </div>
+          </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button [routerLink]="['/contact']">Contact</ion-button>
+        <ion-button [routerLink]="['/contact']">
+          <img  src="../../assets/logo/homard.png" height="75%">
+          <div id="text">
+            Contact
+          </div>
+        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
