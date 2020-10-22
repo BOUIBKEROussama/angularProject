@@ -1,0 +1,18 @@
+#conteneur{
+    text-align: center;
+}
+ion-button{
+    color:white;
+    --background: black;
+    --opacity:0.4;
+    height:100px;
+    width:100%;
+    --border-style:solid;
+    --border-color:black;
+    --border-radius:none;
+
+}
+
+#text{
+    margin-left: 20px;
+}
