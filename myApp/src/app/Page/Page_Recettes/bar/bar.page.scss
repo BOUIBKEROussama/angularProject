@@ -1,0 +1,36 @@
+#contenue{
+    text-align: center;
+    align-content: center;
+}
+
+#contenue h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#contenue p{
+    font-size: 11px;
+    font-style: italic;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 67%;
+}
+
+#contenue ion-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    width:300px;
+    height:300px;
+    display: block;
+    margin: 0 auto;
+}

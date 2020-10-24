@@ -90,7 +90,11 @@ const routes: Routes = [
   {
     path: 'villa9-trois',
     loadChildren: () => import('./Page/Page_Restaurants/villa9-trois/villa9-trois.module').then( m => m.Villa9TroisPageModule)
+  },  {
+    path: 'recettexyz',
+    loadChildren: () => import('./Page/Page_Recettes/recettexyz/recettexyz.module').then( m => m.RecettexyzPageModule)
   },
+
 ];
 
 @NgModule({

@@ -1,0 +1,51 @@
+ion-button{
+    color:white;
+    --background: black;
+    --opacity:0.4;
+    height:70px;
+    width:100%;
+    --border-style:solid;
+    --border-color:black;
+    --border-radius:none;
+    font-size: 9px;
+}
+#texte{
+    text-align: center;
+}
+#texte h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#texte strong {
+    font-size: 12px;
+    font-style: italic;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+  }
+
+#texte p{
+    font-size: 12px;
+    font-style: italic;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+}
+
+ion-grid{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+}
