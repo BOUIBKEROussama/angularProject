@@ -1,26 +1,55 @@
 <ion-header>
-  
+
 </ion-header>
 
 <ion-content>
+  <div id="head">
+    <ion-grid>
+      <ion-row>
 
+        <ion-col>
+        
+            <!--<img class="imageHome" src="../../assets/homeLogo.png">-->
+            <button id="bouton" routerLink="/home">
+              <img class="imageHome" src="../../assets/homeLogo.png"/>
+            </button>
+          
+        </ion-col>
+
+        <ion-col>
+          <img class="image" src="../../assets/navbarbg.png">
+        </ion-col>
+
+        <ion-col>
+          <!--<img class="imageCart" src="../../assets/cartLogo.png">-->
+          <button id="bouton" routerLink="/panier">
+            <img class="imageCart" src="../../assets/cartLogo.png"/>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
 
   <ion-button routerLink="/poisson">
     <div id="text">
       Poisson
     </div>
   </ion-button>
-  <ion-button>
+
+  <ion-button routerLink="/coquillage">
     <div id="text">
       Coquillages
     </div>
   </ion-button>
-  <ion-button>
+
+  <ion-button routerLink="/crustace">
     <div id="text">
       Crustacés
     </div>
   </ion-button>
-  <ion-button>
+
+  <ion-button routerLink="/promotion">
     <div id="text">
       Promotion
     </div>

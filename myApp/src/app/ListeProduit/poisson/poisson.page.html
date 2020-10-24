@@ -1,9 +1,58 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>poisson</ion-title>
-  </ion-toolbar>
+  
 </ion-header>
 
 <ion-content>
+  <div id="head">
+    <ion-grid>
+      <ion-row>
 
+        <ion-col>
+        
+            <!--<img class="imageHome" src="../../assets/homeLogo.png">-->
+            <button id="bouton" routerLink="/home">
+              <img class="imageHome" src="../../assets/homeLogo.png"/>
+            </button>
+          
+        </ion-col>
+
+        <ion-col>
+          <img class="image" src="../../assets/navbarbg.png">
+        </ion-col>
+
+        <ion-col>
+          <!--<img class="imageCart" src="../../assets/cartLogo.png">-->
+          <button id="bouton" routerLink="/panier">
+            <img class="imageCart" src="../../assets/cartLogo.png"/>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <h1>Poisson</h1>
+  <ion-button *ngFor="let i of liste" (click)="add(i)">
+    <ion-grid>
+      <ion-row>
+        <ion-col >
+          <div id="logo" style="text-align:center; height:100%;">
+            <img src="../../../assets/logo/poulpe.png" style="height:80%; width:20%; padding-top: 20px;"/>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div id="name" style="text-align:center; height:100%; padding:50px;">
+            {{i.name}}
+          </div>
+        </ion-col>
+        <ion-col>
+          <div id="price" style="text-align:center; height:100%; padding:50px;">
+            {{i.price}}€
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  
+  </ion-button>
 </ion-content>

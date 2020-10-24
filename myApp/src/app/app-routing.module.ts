@@ -107,6 +107,10 @@ const routes: Routes = [
     path: 'promotion',
     loadChildren: () => import('./ListeProduit/promotion/promotion.module').then( m => m.PromotionPageModule)
   },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
 ];
 
 @NgModule({

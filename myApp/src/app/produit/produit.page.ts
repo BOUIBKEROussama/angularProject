@@ -12,4 +12,5 @@ export class ProduitPage implements OnInit {
   ngOnInit() {
   }
 
+
 }
