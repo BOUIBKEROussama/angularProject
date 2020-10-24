@@ -90,10 +90,30 @@ const routes: Routes = [
   {
     path: 'villa9-trois',
     loadChildren: () => import('./Page/Page_Restaurants/villa9-trois/villa9-trois.module').then( m => m.Villa9TroisPageModule)
-  },  {
-    path: 'recettexyz',
-    loadChildren: () => import('./Page/Page_Recettes/recettexyz/recettexyz.module').then( m => m.RecettexyzPageModule)
   },
+  {
+    path: 'poisson',
+    loadChildren: () => import('./ListeProduit/poisson/poisson.module').then( m => m.PoissonPageModule)
+  },
+  {
+    path: 'coquillage',
+    loadChildren: () => import('./ListeProduit/coquillage/coquillage.module').then( m => m.CoquillagePageModule)
+  },
+  {
+    path: 'crustace',
+    loadChildren: () => import('./ListeProduit/crustace/crustace.module').then( m => m.CrustacePageModule)
+  },
+  {
+    path: 'promotion',
+    loadChildren: () => import('./ListeProduit/promotion/promotion.module').then( m => m.PromotionPageModule)
+  },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
+  {path: 'recettexyz',
+  loadChildren: () => import('./Page/Page_Recettes/recettexyz/recettexyz.module').then( m => m.RecettexyzPageModule)
+},
 
 ];
 
