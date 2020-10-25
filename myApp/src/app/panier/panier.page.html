@@ -1,15 +1,4 @@
 <ion-header>
-<<<<<<< HEAD
-  <ion-toolbar>
-    <ion-title>coquillage</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
-=======
-
 </ion-header>
 
 <ion-content>
@@ -19,6 +8,7 @@
 
         <ion-col size=3>
         
+            <!--<img class="imageHome" src="../../assets/homeLogo.png">-->
             <button id="bouton" routerLink="/home" style="background-color: black;">
               <img class="imageHome" src="../../assets/homeLogo.png" width=60/>
             </button>
@@ -32,7 +22,7 @@
         </ion-col>
 
         <ion-col size=3>
-
+          <!--<img class="imageCart" src="../../assets/cartLogo.png">-->
           <button id="bouton" routerLink="/panier" style="float: right;" style="background-color: black;
           float: right;">
             <img class="imageCart" src="../../assets/cartLogo.png" width=60/>
@@ -43,10 +33,9 @@
     </ion-grid>
   </div>
 
-  <h1>Coquillage</h1>
+  <h1>Votre panier</h1>
 
-
-  <ion-button *ngFor="let i of liste" (click)="add(i)">
+  <ion-button *ngFor="let i of listePanier" (click)="add(i)">
     <ion-grid>
       <ion-row>
         <ion-col size="3">
@@ -64,4 +53,3 @@
   
   </ion-button>
 </ion-content>
->>>>>>> francois2

@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'accueil',
-    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
-  },
-  {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
@@ -34,10 +30,6 @@ const routes: Routes = [
   {
     path: 'produit',
     loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
-  },
-  {
-    path: 'page-bateau',
-    loadChildren: () => import('./page-bateau/page-bateau.module').then( m => m.PageBateauPageModule)
   },
   {
     path: 'de-la-brise',
@@ -107,6 +99,17 @@ const routes: Routes = [
     path: 'promotion',
     loadChildren: () => import('./ListeProduit/promotion/promotion.module').then( m => m.PromotionPageModule)
   },
+<<<<<<< HEAD
+=======
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
+  {path: 'recettexyz',
+  loadChildren: () => import('./Page/Page_Recettes/recettexyz/recettexyz.module').then( m => m.RecettexyzPageModule)
+},
+
+>>>>>>> francois2
 ];
 
 @NgModule({
