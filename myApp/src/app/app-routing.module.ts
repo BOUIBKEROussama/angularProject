@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'accueil',
-    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
-  },
-  {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
@@ -34,10 +30,6 @@ const routes: Routes = [
   {
     path: 'produit',
     loadChildren: () => import('./produit/produit.module').then( m => m.ProduitPageModule)
-  },
-  {
-    path: 'page-bateau',
-    loadChildren: () => import('./page-bateau/page-bateau.module').then( m => m.PageBateauPageModule)
   },
   {
     path: 'de-la-brise',
