@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { ConnexionService } from 'src/app/Services/connexion.service';
->>>>>>> francois2
 
 @Component({
   selector: 'app-promotion',
@@ -10,12 +7,6 @@ import { ConnexionService } from 'src/app/Services/connexion.service';
   styleUrls: ['./promotion.page.scss'],
 })
 export class PromotionPage implements OnInit {
-<<<<<<< HEAD
-
-  constructor() { }
-
-  ngOnInit() {
-=======
   fichier;
   liste = [];
 
@@ -44,7 +35,6 @@ export class PromotionPage implements OnInit {
     else{
       this.connexion.removeList(element);
     }
->>>>>>> francois2
   }
 
 }

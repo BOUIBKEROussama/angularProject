@@ -99,8 +99,6 @@ const routes: Routes = [
     path: 'promotion',
     loadChildren: () => import('./ListeProduit/promotion/promotion.module').then( m => m.PromotionPageModule)
   },
-<<<<<<< HEAD
-=======
   {
     path: 'panier',
     loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
@@ -109,7 +107,6 @@ const routes: Routes = [
   loadChildren: () => import('./Page/Page_Recettes/recettexyz/recettexyz.module').then( m => m.RecettexyzPageModule)
 },
 
->>>>>>> francois2
 ];
 
 @NgModule({
